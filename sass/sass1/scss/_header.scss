@@ -1,0 +1,50 @@
+header {
+
+    padding: 1rem 0;
+
+    img {
+        width: 150px;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    nav {
+        flex: 1;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        list-style-type: none;
+        font-size: $font-small;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    li {
+        color: $color-default;
+        display: block;
+        margin: 0;
+ 
+
+        a {
+            border-radius: 5px;
+            color: $color-default;
+            display: block;
+            font-size: $font-normal;
+            margin: auto $space-default;
+            padding: $space-default;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+
+}
