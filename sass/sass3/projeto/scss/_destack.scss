@@ -1,0 +1,32 @@
+.destack {
+    background-color: $bg-color;
+    padding: $space-default;
+    border-top: 1px solid $color-02;
+    border-bottom: 1px solid $color-02;
+    &__title {
+        color: $color-default;
+        font-size: 5vw;
+        font-family: $font-family-default;
+        margin-top: 0;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        font-size: $font-medium;
+        margin-top: $mt;
+        margin-bottom: $mb;
+        color: $color-01;
+    }
+    &__image {
+        width: 100%;
+        height: auto;
+        margin: $space-default auto;
+    }
+    &__description {
+        font-size: $font-normal;
+        color: $color-default;
+        padding: 2rem 0;
+        max-width: 600px;
+        margin: auto;
+    }
+}

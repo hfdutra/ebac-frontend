@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div,
+p {
+  display: block;
+}
+
+article,
+header,
+section,
+footer {
+  color: #3d3d3d;
+  display: block;
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+section {
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: 83.3333333333%;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Exo 2", sans-serif, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #202020;
+}
+
+p {
+  color: #e63d34;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+h1 {
+  color: #e63d34;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  color: #dcdcdc;
+  font-size: 2.2rem;
+}
+
+h3 {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #202020;
+}
+footer p {
+  text-align: center;
+}
+footer p strong {
+  color: #FFF;
+}
+
+header {
+  background-color: #FFF;
+}
+header p {
+  color: #dcdcdc;
+}
+
+.blocks {
+  /* 
+      BEM CSS
+      - Block
+      - Element 
+      - Modifier
+
+      - Padrão do Projeto / Design Patterns 
+
+      Exemplo: 
+      .cars__title
+      .cars__list
+      .cars__item
+      .cars__item--destack 
+      .cars__button
+      .cars__img-container
+
+      .block__element--modifier
+
+   */
+  padding: 3rem 0;
+}
+.blocks__title {
+  color: #e63d34;
+}
+.blocks__list {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: block;
+  float: left;
+  height: auto;
+  margin: 1.5rem auto;
+  padding: 1rem 0;
+  width: 100%;
+}
+.blocks__item {
+  color: #dcdcdc;
+  display: block;
+  margin: 1.5rem 0.75rem;
+  text-align: center;
+  width: calc(33% - 15px);
+}
+@media (max-width: 999px) {
+  .blocks__item {
+    width: calc(99% - 30px);
+  }
+}
+.blocks__img-container {
+  display: block;
+  height: 15rem;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 999px) {
+  .blocks__img-container {
+    height: 20rem;
+  }
+}
+.blocks__description {
+  color: #202020;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 0;
+}
+.blocks__description--destack {
+  color: #dcdcdc;
+}
+.blocks__button {
+  background-color: #e63d34;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 2.2rem;
+  margin: 3rem auto 3rem;
+  padding: 0.55rem 3rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+header {
+  padding: 1rem 0;
+}
+header img {
+  width: 150px;
+}
+header .logo {
+  flex: 1;
+}
+header nav {
+  flex: 1;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+  width: 100%;
+}
+header li {
+  color: #202020;
+  display: block;
+  margin: 0;
+}
+header li a {
+  border-radius: 5px;
+  color: #202020;
+  display: block;
+  font-size: 1.5rem;
+  margin: auto 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cars__title {
+  color: #202020;
+}
+.cars__item {
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1px rgba(32, 32, 32, 0.25);
+  color: #dcdcdc;
+  display: flex;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
+}
+.cars__item--destack {
+  background-color: #e63d34;
+  border: 1px solid #e63d34;
+  box-shadow: 0 0 1px rgba(32, 32, 32, 0.25);
+}
+.cars__button {
+  background-color: #202020;
+}
+
+.destack {
+  background-color: #FFF;
+  padding: 1.5rem;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+.destack__title {
+  color: #202020;
+  font-size: 5vw;
+  font-family: "Exo 2", sans-serif, Helvetica, sans-serif;
+  margin-top: 0;
+  text-align: center;
+}
+.destack__subtitle {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #e63d34;
+}
+.destack__image {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+}
+.destack__description {
+  font-size: 1.5rem;
+  color: #202020;
+  padding: 2rem 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
