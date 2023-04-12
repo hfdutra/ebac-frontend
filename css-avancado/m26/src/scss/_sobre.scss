@@ -1,0 +1,30 @@
+
+#sobre {
+    padding: 8rem 0;
+    display: block;
+
+    .container {
+        border: 1px solid #DDD;
+        border-radius: 2rem;
+        padding: 0 2rem;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+
+        p {
+            font-size: $font-size-default;
+            color: $font-color-black;
+        }
+        .coluna {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .imagem-sobre{
+        width: 100%;
+    }
+}

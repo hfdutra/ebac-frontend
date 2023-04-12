@@ -1,0 +1,39 @@
+#como-funciona {
+    background: $font-color-primary;
+}
+
+.steps {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    height: 100%;
+
+    &__item {
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 1.85rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover {
+            transition: transform cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation: toTop;
+            animation-duration: .5s;
+            box-shadow: -30px 50px 70px 0px rgba(88,103.00000000000003,128,.15);
+        }
+        span {
+            color: $color-secondary;
+        }
+        img {
+            max-height: 100px;
+        }
+        
+    }
+
+}

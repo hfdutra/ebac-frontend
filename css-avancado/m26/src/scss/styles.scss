@@ -1,0 +1,107 @@
+$color-primary: #9b51e0;
+$color-secondary: #ff6900;
+$color-three: #f4b539;
+$font-color-primary: #ffffff;
+$font-color-secondary: #454545;
+$font-color-black: #000;
+$font-default: 'inter', Helvetica, sans-serif;
+$font-size-default: 1.6rem;
+$font-size-nav: 1.8rem;
+
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'nav';
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $font-color-primary;
+    font-family: $font-default;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: $font-color-black;
+    text-align: center;
+    font-size: 5rem;
+}
+
+h4 {
+    color: $font-color-black;
+    font-size: 2rem;
+}
+
+.button {
+    display: block;
+    position: relative;
+    box-shadow: 0 15px 30px 0 rgba(183.00000000000009,136.00000000000003,248,.3);
+    background-color: $color-primary;
+    border-radius: 100rem;
+    border: 0px solid $color-primary;
+    padding: 20px 40px;
+    color: $font-color-primary;
+    font-weight: bold;
+    font-size: $font-size-default;
+    text-decoration: none;
+    align-self: center;
+    margin: 5rem 0 0;
+    width: max-content;
+    &:hover {
+        box-shadow: 0 15px 30px 0 rgba(244,180.99999999999997,56.99999999999999,.3);
+        background-color: $color-three;
+    }
+
+}
+
+article {
+
+    h1 {
+        color: $font-color-black;
+        font-size: 3rem;
+        text-align: left;
+    }
+
+}
+
+h2 {
+    color: $font-color-black;
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 1px 2px 8px #FFFFFF;
+}
+
+#root,
+header,
+section {
+    color: $font-color-black;
+}
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+
+section {
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+@import 'animations';
+@import 'header';
+@import 'sobre';
+@import 'produtos';
+@import 'vitrine';
+@import 'steps';
+@import 'footer';
