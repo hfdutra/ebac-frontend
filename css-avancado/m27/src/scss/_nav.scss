@@ -1,0 +1,20 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    align-items: center;
+
+    &__item {
+        color: $font-color-black;
+        font-size: $font-size-nav;
+        text-decoration: none;
+        position: relative;
+        margin: 0 10px;
+        &:hover {
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            font-weight: bold;
+            color: $color-secondary;
+        }
+    }
+}

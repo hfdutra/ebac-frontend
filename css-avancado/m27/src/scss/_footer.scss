@@ -1,0 +1,15 @@
+footer {
+    border-top: 1px solid #DDD;
+    padding: 5rem 0;
+    img{
+        margin: auto;
+    }
+    p {
+        color: $font-color-black;
+        font-size: $font-size-default;
+        text-align: center;
+        a {
+            color: $color-secondary;
+        }
+    }
+}

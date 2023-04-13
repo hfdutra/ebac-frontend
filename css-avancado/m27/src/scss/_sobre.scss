@@ -1,0 +1,42 @@
+
+#sobre {
+    padding: 8rem 0;
+    display: block;
+
+    .container {
+        border: 1px solid #DDD;
+        border-radius: 2rem;
+        padding: 0 2rem;
+
+        @media (max-width: 768px) {
+            max-width: 90%;
+        }
+
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        }
+
+        p {
+            font-size: $font-size-default;
+            color: $font-color-black;
+        }
+        .coluna {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .imagem-sobre{
+        width: 100%;
+        @media (max-width: 768px) {
+            max-width: 300px;
+        }
+    }
+}

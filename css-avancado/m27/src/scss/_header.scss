@@ -1,0 +1,51 @@
+
+header .container {
+
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .hero {
+        align-items: flex-start;
+        justify-content: center;
+        background-image: url('../assets/images/bnr.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        height: 50vw;
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 0rem;
+        width: 100%;
+        text-align: left;
+
+        @media  (max-width: 1199px) {
+            height: 95vw;
+        }
+
+        @media (max-width: 768px) {
+            background-image: none;
+            min-height: 50vh;
+        }
+    
+
+
+        .text {
+            width: 40%;
+            @media (max-width: 768px) {
+                    width: 100%;
+                }
+        }
+
+        h1 {
+            padding: 1rem 0 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        h4{
+            color: $color-secondary
+        }
+    }
+
+}
