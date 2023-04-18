@@ -1,0 +1,360 @@
+/* Variáveis */
+$orange: #ff5722;
+
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+    max-width: 1280px ;
+    margin: auto;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  fill: #333;
+  transition: fill 0.2s ease-in-out;
+}
+
+.logo:hover {
+  fill: $orange;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li + li {
+  margin-left: 1.6rem;
+}
+
+nav a {
+  padding: 0.8rem;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: $orange;
+}
+
+/* Estilos do banner hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(50vh - 8rem);
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  overflow: hidden;
+
+  :not(svg) {
+    z-index: 1;
+  }
+}
+
+
+
+.hero h1 {
+  font-size: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero p {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 2rem;
+  background-color: $orange;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: darken($orange, 10%);
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 4rem 0;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .image {
+    background-image: url('https://via.placeholder.com/600x400');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+  
+
+
+/* Estilos do rodapé */
+footer {
+  padding: 1.6rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+
+.logo {
+    width: 6rem;
+    height: 6rem;
+    fill: none;
+    stroke: #333;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.2s ease-in-out;
+    border: 2px solid $orange;
+    padding: 0;
+  }
+  
+  .logo:hover {
+    stroke: $orange;
+  }
+  
+  .logo path {
+    stroke-dasharray: 140;
+    stroke-dashoffset: 140;
+    animation: dash 2s ease-in-out forwards infinite;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+
+  .waves {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 110%;
+
+    .wave-01 {
+        animation: wave1 3s ease-in-out infinite alternate;
+        
+    }
+
+    .wave-02 {
+        animation: wave2 3s ease-in-out infinite alternate;
+    }
+
+    .wave-03 {
+        animation: dash1 3s cubic-bezier(0, 1.23, 1, 0.11) infinite alternate;
+        stroke-dasharray: 150;
+        stroke: #fff;
+        stroke-width: 3px;
+    }
+}
+
+@keyframes wave1 {
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes wave3 {
+    from {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes dash1 {
+    from {
+       stroke-dashoffset: 2000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 5rem 0;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+
+@import 'player'; 
+
+
+/* $color-font: #fff;
+$color-bg-default: #33f;
+$font-default: Arial, Helvetica, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-default;
+    margin: 0;
+}
+
+h1 {
+    color: $color-font;
+    text-align: center;
+    width: 100%;
+}
+
+#imagens {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 0 auto;
+        
+        img {
+            height: 200px;
+            width: auto;
+            margin: 5px;
+            object-fit: fill;
+            object-position: bottom;
+            border: 1px solid #333;
+
+            &:hover {
+                opacity: 75%;
+                border-color: #33f;
+            }
+        }
+
+    }
+
+}
+header {
+    background-color: $color-bg-default;
+    width: 100vw;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+
+    h1 {
+        margin-top: 4rem;
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.waves {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 110%;
+
+    .wave-01 {
+        animation: wave1 3s ease-in-out infinite alternate;
+        
+    }
+
+    .wave-02 {
+        animation: wave2 3s ease-in-out infinite alternate;
+    }
+
+    .wave-03 {
+        animation: dash1 3s cubic-bezier(0, 1.23, 1, 0.11) infinite alternate;
+        stroke-dasharray: 150;
+        stroke: #fff;
+        stroke-width: 3px;
+    }
+}
+
+@keyframes wave1 {
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes wave3 {
+    from {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes dash1 {
+    from {
+       stroke-dashoffset: 2000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@import 'player'; */
