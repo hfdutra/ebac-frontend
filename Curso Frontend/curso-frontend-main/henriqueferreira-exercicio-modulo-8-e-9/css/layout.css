@@ -1,0 +1,176 @@
+/* 
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    max-width: 70%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+form {
+    background: #eee;
+    padding: 10px;
+}
+
+form div {
+    background: #fff;
+    border-bottom: 1px solid #33f;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    color: #66F;
+}
+
+input {
+    padding: 1rem;
+}
+
+[type="text"],
+[type="email"],
+textarea,
+label {
+    display: block;
+    width: 100%;
+}
+
+article {
+    /* background-color: yellow; */
+    float: left;
+    padding: 2rem;
+    width: 100%;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+section#colunas {
+    border: 3rem solid white;
+}
+
+.coluna {
+    display: flex;
+    width: 33.33%;
+    float: left;
+    padding: 5rem;
+    background: black;
+    text-align: center;
+    color: white;
+    height: 40vh;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coluna-1:hover {
+    background-image: url(https://images.unsplash.com/photo-1498330177096-689e3fb901ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80);
+    background-size: cover;
+    background-color: black;
+}
+
+.coluna-2:hover {
+    background-image: url(https://images.unsplash.com/photo-1567876520868-1fb3fef987fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGd1aXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60    );
+    background-size: cover;
+    background-color: black;
+}
+
+.coluna-3:hover {
+    background-image: url(https://images.unsplash.com/photo-1498330177096-689e3fb901ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80);
+    background-size: cover;
+    background-color: black;
+}
+
+.coluna-100w {
+    width: 100%;
+}
+
+.assinatura {
+    width: 200px;
+    text-align: right;
+    margin-right: 3vw;
+    float: right;
+}
+
+#apresentacao p::first-letter {
+    font-size: 6vw;
+    font-weight: bold;
+    float: left;
+    margin: 0px 25px 0 0;
+    line-height: 1
+}
+
+section#apresentacao p {
+    line-height: 2;
+    padding: 3vw;
+    text-align: justify;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/* Mobile First */
+
+
+/* Tablet */
+
+@media (min-width: 769px) {}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+/* Smartphone */
+
+@media (max-width: 425px) {
+    nav,
+    article,
+    .coluna {
+        width: 100%;
+        min-width: 320px;
+    }
+}

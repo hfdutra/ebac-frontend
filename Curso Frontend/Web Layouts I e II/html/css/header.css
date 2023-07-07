@@ -1,0 +1,151 @@
+/* 
+	Arquivo CSS geral com estilos dos elementos de todas páginas 
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  header {
+    background: #fff;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: 90px;
+  }
+  
+  header nav {
+    float: right;
+    width: auto;
+    display: block;
+    height: 90px;
+  }
+  
+  .logo {
+    margin: 0;
+    display: block;
+    float: left;
+    padding: 0rem;
+    width: auto;
+    max-height: 90px;
+    background: white;
+  }
+  
+  .logo a {
+    position: relative;
+    display: block;
+    text-align: center;
+  }
+  
+  .logo img {
+    padding: 20px;
+    width: 350px;
+  }
+  
+  ul.navegacao {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: right;
+    background-color: white;
+  }
+  
+  .navegacao li {
+    display: inline-block;
+    text-align: right;
+    height: 100%;
+  }
+  
+  .navegacao a {
+    color: #04063e;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 4;
+    padding: 5px 15px;
+    text-transform: none;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  /* Mobile First */
+  
+  /* Tablet */
+  
+  @media (max-width: 999px) and (min-width: 769px) {
+    .navegacao a {
+      padding: 13px 10px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logo {
+      margin: auto;
+      float: unset;
+      height: auto;
+      max-width: 350px;
+    }
+  
+    .logo img {
+      padding: 20px;
+      width: auto;
+      height: auto;
+    }
+  
+    header nav {
+      float: left;
+      width: 100%;
+      display: block;
+  
+      border-top: 1px solid #f9f0ec;
+    }
+    .navegacao li {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      text-align: center;
+      vertical-align: middle;
+      height: 100%;
+      background-color: #f9f0ec;
+      padding: 1px;
+    }
+  
+    .navegacao {
+      width: 100%;
+    }
+    .navegacao a {
+      color: #04063e;
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      height: 100%;
+      vertical-align: middle;
+      line-height: 2.5;
+      padding: 1px 1px 0;
+      background: white;
+    }
+  }
+  
+  /* Smartphone */
+  
+  @media (max-width: 425px) {
+    .navegacao a {
+      font-size: 16px;
+      line-height: 2;
+    }
+  
+    .logo {
+      max-width: 300px;
+    }
+  
+    .logo img {
+      padding: 10px;
+    }
+  }
+  

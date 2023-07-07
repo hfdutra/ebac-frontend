@@ -1,0 +1,712 @@
+/* 
+	Arquivo CSS geral com estilos dos elementos de todas pÃ¡ginas 
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6em;
+    color: #04063e;
+    background-color: white;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 8rem;
+  }
+  
+  h2 {
+    font-size: 6rem;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+    line-height: 1;
+    font-weight: bold;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+  
+  hr {
+    border: 5px solid #ff1562;
+    width: 80px;
+    margin: 40px auto;
+  }
+  
+  form {
+    background: transparent;
+    padding: 0;
+  }
+  
+  form div {
+    background: #fff;
+    margin: 1rem;
+    padding: 0;
+  }
+  
+  label {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
+    color: #04063e;
+  }
+  
+  textarea {
+    border: none;
+    border-bottom: 2px solid #ff1562;
+  }
+  
+  input {
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid #ff1562;
+  }
+  
+  input[type="submit"] {
+    margin: 40px 0 0;
+    display: block;
+    padding: 20px 40px;
+    border: 1px solid;
+    text-decoration: none;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    color: #04063e;
+    font-weight: bold;
+    text-decoration-color: red !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+  }
+  
+  [type="text"],
+  [type="email"],
+  textarea,
+  label {
+    display: block;
+    width: 100%;
+  }
+  
+  article {
+    /* background-color: yellow; */
+    float: left;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .container {
+    max-width: 70%;
+  }
+  
+  a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color: red !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  footer {
+    color: #04063e;
+    font-size: 1.5rem;
+    background-color: white;
+    border-top: 1px solid #ff1562;
+    padding: 10vw;
+    text-align: center;
+  }
+  
+  div {
+    margin: 0px auto;
+  }
+  
+  a.botao {
+    margin: 40px auto 0;
+    display: block;
+    padding: 20px 40px;
+    border: 1px solid;
+    text-decoration: none;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    color: #04063e;
+  }
+  
+  a.botao:hover {
+    background: #04063e;
+    color: white;
+  }
+  
+  footer hr {
+    border: transparent;
+  }
+  
+  /* Página inicial */
+  
+  #banner {
+    height: 1000px;
+    margin: 0;
+    background-image: url(../images/imagem-topo.webp);
+    background-size: cover;
+    display: block;
+    position: relative;
+    background-position: left top;
+    padding: 0 10%;
+  }
+  
+  .banner-coluna1 {
+    display: block;
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 250px;
+  }
+  
+  .banner-coluna2 {
+    display: block;
+    float: left;
+    width: 40%;
+    position: relative;
+  }
+  
+  #banner h1,
+  #banner h4 {
+    color: white;
+  }
+  
+  #banner h1 {
+    font-size: 80px;
+    font-weight: 200;
+    letter-spacing: -3px;
+  }
+  
+  #banner h4 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  
+  #banner hr {
+    margin: 40px 0;
+  }
+  
+  #areas h2,
+  #areas h5 {
+    text-align: center;
+  }
+  
+  .area {
+    display: block;
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  a.botao-banner {
+    margin-top: 40px;
+    display: block;
+    padding: 20px 40px;
+    border: 1px solid;
+    text-decoration: none;
+    width: auto;
+    text-align: center;
+    position: absolute;
+    color: white;
+  }
+  
+  a.botao-banner:hover {
+    background: white;
+    color: #04063e;
+    border-color: white;
+  }
+  
+  .caixa-area {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+  }
+  
+  .caixa-acao {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  
+  .areas-acao {
+    clear: both;
+  }
+  
+  #areas {
+    padding: 10vw 0;
+  }
+  
+  #chamada {
+    background: #f9f0ec;
+    text-align: center;
+    padding: 10vw 0;
+  }
+  
+  #chamada .container {
+    background: white;
+    padding: 5vw;
+    border-radius: 50px;
+  }
+  
+  .area span {
+    font-size: 5vw;
+    color: #ff1562;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 100;
+  }
+  
+  /* Sobre */
+  
+  #topo {
+    background: #f9f0ec;
+    padding: 10vw 0;
+  }
+  
+  #topo hr {
+    margin: 40px 0;
+  }
+  
+  #topo h5 {
+    margin-bottom: 30px;
+  }
+  
+  .titulo {
+    text-align: center;
+  }
+  
+  #cv {
+    padding: 10vw 0;
+    background: #f9f0ec;
+  }
+  
+  #apresentacao {
+    padding: 20vw 0 10vw;
+  }
+  
+  #apresentacao p::first-letter {
+    font-size: 8vw;
+    font-weight: bold;
+    float: left;
+    margin: 0px 15px 0 0;
+    line-height: 1;
+  }
+  
+  #apresentacao p {
+    line-height: 2;
+    padding: 0vw;
+    text-align: justify;
+  }
+  
+  .assinatura {
+    max-width: 400px;
+    text-align: right;
+    margin-right: 0vw;
+    float: right;
+    margin-top: 30px;
+  }
+  
+  .b1,
+  .b2 {
+    float: left;
+    width: 50%;
+  }
+  
+  .b2 img {
+    margin-bottom: -25vw;
+    margin-top: -5vw;
+    box-shadow: 20px 30px 50px -10px rgb(0 0 0 / 25%);
+    border: 10px solid white;
+  }
+  
+  #cv .container {
+    background: white;
+    padding: 5vw;
+    border-radius: 50px;
+  }
+  
+  #cv .container {
+    background: white;
+    padding: 5vw;
+    border-radius: 50px;
+  }
+  
+  #cv strong {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  #cv p {
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  /* Terapias */
+  
+  #atuacao {
+    padding: 0vw;
+    background: #f9f0ec;
+    overflow: hidden;
+  }
+  
+  #terapias #topo {
+    padding: 10vw 0 5vw;
+  }
+  
+  .cx1,
+  .cx2 {
+    width: 50%;
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .cx1 {
+    float: left;
+    padding: 2vw 2vw;
+  }
+  
+  #atuacao .container {
+    background: white;
+    padding: 5vw;
+    border-radius: 50px;
+    display: block;
+    position: relative;
+  }
+  
+  #atuacao p {
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  #transtornos,
+  #medos,
+  #depressao {
+    margin-bottom: 5vw;
+  }
+  
+  #terapias .area {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+  
+  /* Contatos */
+  
+  #contatos #topo {
+    background: #f9f0ec;
+    padding: 10vw 0 5vw;
+  }
+  
+  .email,
+  .telefone {
+    text-align: center;
+    width: 49%;
+    display: inline-block;
+  }
+  
+  .telefone img,
+  .email img {
+    margin-right: 10px;
+  }
+  
+  .email *,
+  .telefone * {
+    display: inline-block;
+  }
+  
+  #formulario {
+    margin-top: 5vw;
+  }
+  
+  iframe {
+    width: 100%;
+  }
+  
+  #formulario span {
+    font-size: 5vw;
+    color: #ff1562;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 100;
+  }
+  
+  #formulario h3 {
+    margin: 40px 0px;
+  }
+  
+  #mapa {
+    margin-top: 5vw;
+  }
+  
+  #contatos #chamada {
+    padding: 5vw 0;
+  }
+  
+  .redes a {
+    display: inline-block;
+    margin: 10px 20px;
+  }
+  
+  /* Mobile First */
+  
+  /* Tablet */
+  
+  @media (min-width: 769px) {
+  }
+  
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 5rem;
+      line-height: 1;
+    }
+  
+    h5 {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+  
+    footer img {
+      max-width: 50%;
+      height: auto;
+    }
+  
+    .container {
+      max-width: 90%;
+    }
+  
+    .area {
+      width: 100%;
+    }
+  
+    .area span {
+      font-size: 10vw;
+      font-weight: bold;
+    }
+  
+    a.botao {
+      width: auto;
+    }
+
+/* Página inicial */
+
+    .banner-coluna1 {
+      width: 100%;
+      top: 350px;
+      background: rgb(170 155 160 / 36%);
+      padding: 50px;
+      backdrop-filter: blur(15px);
+    }
+  
+    #banner h1,
+    #topo h1 {
+      font-size: 55px;
+      font-weight: 200;
+      letter-spacing: -2px;
+    }
+  
+    #banner h4 {
+      font-size: 22px;
+      line-height: 1.2;
+    }
+  
+    a.botao-banner {
+      position: relative;
+    }
+  
+    #chamada .container {
+      padding: 10vw;
+    }
+
+/* Sobre */    
+  
+    #topo {
+      padding: 150px 0 0;
+    }
+  
+    .b1,
+    .b2 {
+      float: left;
+      width: 100%;
+    }
+  
+    .b2 img {
+      margin-bottom: 40px;
+      margin-top: 10vw;
+      max-width: 320px;
+    }
+
+/* Terapias */    
+   
+  
+    #terapias #topo {
+      padding: 150px 0 0;
+    }
+  
+    .cx1,
+    .cx2 {
+      width: 100%;
+    }
+  
+    .cx1 {
+      float: left;
+      padding: 5vw 0vw 10vw;
+    }
+  
+    #atuacao {
+      padding: 10vw 0;
+    }
+  
+    #atuacao .container {
+      padding: 10vw;
+    }
+
+  /* Contatos */    
+  
+    #contatos #topo {
+      padding: 150px 0 0;
+    }
+  
+    .email,
+    .telefone {
+      text-align: left;
+      width: 100%;
+      display: block;
+      margin: 20px 0;
+    }
+  
+    .email h3,
+    .telefone h3 {
+      font-size: 2rem;
+    }
+  
+    #contatos h2 {
+      font-size: 4rem;
+    }
+  
+    .redes a {
+      margin: 10px 5px;
+    }
+  }
+  
+  @media (min-width: 426px) {
+    .banner-coluna2 {
+      display: none;
+    }
+  
+    #banner {
+      background-position: right top !important;
+    }
+  }
+  
+  /* Smartphone */
+  
+  @media (max-width: 425px) {
+    nav,
+    article,
+    .coluna {
+      width: 100%;
+      min-width: 320px;
+    }
+  
+    hr {
+      border: 1px solid #ff1562;
+    }
+  
+    #banner {
+      height: 640px;
+      padding: 0 10%;
+    }
+  
+    .banner-coluna1 {
+      width: 100%;
+      top: 20px;
+      background: transparent;
+      padding: 0;
+    }
+  
+    .banner-coluna2 {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding-top: 25px;
+    }
+  
+    #banner h1 {
+      font-size: 40px;
+      font-weight: 200;
+      letter-spacing: -1px;
+    }
+  
+    #banner h4 {
+      font-size: 20px;
+    }
+  
+    #banner h1,
+    #banner h4 {
+      color: white;
+    }
+  
+    #banner hr {
+      margin: 20px 0;
+    }
+
+    .banner-coluna1 {
+        backdrop-filter: none;
+    }
+  
+    a.botao-banner {
+      margin: 20px 0;
+      padding: 10px;
+      position: relative;
+      letter-spacing: 1px;
+    }
+  }
+  
